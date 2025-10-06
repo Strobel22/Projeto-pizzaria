@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Crmf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,6 +60,19 @@ namespace ProjetoPizzaria
 
 
 
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbTamanhoPizza.Items.Add("Pequena- R$ 20,00");
+            cmbTamanhoPizza.Items.Add("Média- R$ 30,00");
+            cmbTamanhoPizza.Items.Add("Grande- R$ 50,00");
 
         }
     }
