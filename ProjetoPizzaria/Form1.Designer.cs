@@ -28,48 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmbValorPizza = new System.Windows.Forms.TextBox();
+            this.cmbValordosOpcionais = new System.Windows.Forms.TextBox();
+            this.cmbValorPagar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chkBorda = new System.Windows.Forms.CheckBox();
+            this.chkTempero = new System.Windows.Forms.CheckBox();
+            this.chkCebola = new System.Windows.Forms.CheckBox();
+            this.chkCatupiry = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.cmbValorOpcionais = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbTamanhoPizza = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cmbPesquisar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnSalvar2 = new System.Windows.Forms.Button();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // cmbValorPizza
             // 
-            this.textBox1.Location = new System.Drawing.Point(355, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.cmbValorPizza.Location = new System.Drawing.Point(355, 45);
+            this.cmbValorPizza.Name = "cmbValorPizza";
+            this.cmbValorPizza.Size = new System.Drawing.Size(100, 20);
+            this.cmbValorPizza.TabIndex = 0;
+            this.cmbValorPizza.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // cmbValordosOpcionais
             // 
-            this.textBox2.Location = new System.Drawing.Point(476, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.cmbValordosOpcionais.Location = new System.Drawing.Point(476, 45);
+            this.cmbValordosOpcionais.Name = "cmbValordosOpcionais";
+            this.cmbValordosOpcionais.Size = new System.Drawing.Size(100, 20);
+            this.cmbValordosOpcionais.TabIndex = 1;
+            this.cmbValordosOpcionais.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // cmbValorPagar
             // 
-            this.textBox3.Location = new System.Drawing.Point(593, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.cmbValorPagar.Location = new System.Drawing.Point(593, 45);
+            this.cmbValorPagar.Name = "cmbValorPagar";
+            this.cmbValorPagar.Size = new System.Drawing.Size(100, 20);
+            this.cmbValorPagar.TabIndex = 2;
+            this.cmbValorPagar.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
             // 
@@ -79,16 +83,6 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Novo";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(209, 391);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 34);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -110,45 +104,45 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // checkBox1
+            // chkBorda
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(66, 122);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkBorda.AutoSize = true;
+            this.chkBorda.Location = new System.Drawing.Point(66, 122);
+            this.chkBorda.Name = "chkBorda";
+            this.chkBorda.Size = new System.Drawing.Size(54, 17);
+            this.chkBorda.TabIndex = 7;
+            this.chkBorda.Text = "Borda";
+            this.chkBorda.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkTempero
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(66, 145);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 8;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkTempero.AutoSize = true;
+            this.chkTempero.Location = new System.Drawing.Point(66, 145);
+            this.chkTempero.Name = "chkTempero";
+            this.chkTempero.Size = new System.Drawing.Size(68, 17);
+            this.chkTempero.TabIndex = 8;
+            this.chkTempero.Text = "Tempero";
+            this.chkTempero.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkCebola
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(66, 168);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 9;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkCebola.AutoSize = true;
+            this.chkCebola.Location = new System.Drawing.Point(66, 168);
+            this.chkCebola.Name = "chkCebola";
+            this.chkCebola.Size = new System.Drawing.Size(59, 17);
+            this.chkCebola.TabIndex = 9;
+            this.chkCebola.Text = "Cebola";
+            this.chkCebola.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkCatupiry
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(66, 191);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 10;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkCatupiry.AutoSize = true;
+            this.chkCatupiry.Location = new System.Drawing.Point(66, 191);
+            this.chkCatupiry.Name = "chkCatupiry";
+            this.chkCatupiry.Size = new System.Drawing.Size(64, 17);
+            this.chkCatupiry.TabIndex = 10;
+            this.chkCatupiry.Text = "Catupiry";
+            this.chkCatupiry.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -158,16 +152,17 @@
             this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Valor da Pizza";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // cmbValorOpcionais
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(475, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Valor dos Opcionais";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.cmbValorOpcionais.AutoSize = true;
+            this.cmbValorOpcionais.Location = new System.Drawing.Point(475, 29);
+            this.cmbValorOpcionais.Name = "cmbValorOpcionais";
+            this.cmbValorOpcionais.Size = new System.Drawing.Size(101, 13);
+            this.cmbValorOpcionais.TabIndex = 12;
+            this.cmbValorOpcionais.Text = "Valor dos Opcionais";
+            this.cmbValorOpcionais.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -207,12 +202,13 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "PESQUISAR";
             // 
-            // textBox4
+            // cmbPesquisar
             // 
-            this.textBox4.Location = new System.Drawing.Point(459, 189);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 17;
+            this.cmbPesquisar.Location = new System.Drawing.Point(459, 188);
+            this.cmbPesquisar.Name = "cmbPesquisar";
+            this.cmbPesquisar.Size = new System.Drawing.Size(100, 20);
+            this.cmbPesquisar.TabIndex = 17;
+            this.cmbPesquisar.TextChanged += new System.EventHandler(this.cmbPesquisar_TextChanged);
             // 
             // dataGridView1
             // 
@@ -222,31 +218,50 @@
             this.dataGridView1.Size = new System.Drawing.Size(666, 141);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
+            // 
+            // btnSalvar2
+            // 
+            this.btnSalvar2.Location = new System.Drawing.Point(215, 389);
+            this.btnSalvar2.Name = "btnSalvar2";
+            this.btnSalvar2.Size = new System.Drawing.Size(106, 34);
+            this.btnSalvar2.TabIndex = 20;
+            this.btnSalvar2.Text = "Salvar";
+            this.btnSalvar2.UseVisualStyleBackColor = true;
+            this.btnSalvar2.Click += new System.EventHandler(this.btnSalvar2_Click);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(272, 109);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.btnSalvar2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.cmbPesquisar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmbValorOpcionais);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkCatupiry);
+            this.Controls.Add(this.chkCebola);
+            this.Controls.Add(this.chkTempero);
+            this.Controls.Add(this.chkBorda);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbValorPagar);
+            this.Controls.Add(this.cmbValordosOpcionais);
+            this.Controls.Add(this.cmbValorPizza);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -258,25 +273,27 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox cmbValorPizza;
+        private System.Windows.Forms.TextBox cmbValordosOpcionais;
+        private System.Windows.Forms.TextBox cmbValorPagar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+ 
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chkBorda;
+        private System.Windows.Forms.CheckBox chkTempero;
+        private System.Windows.Forms.CheckBox chkCebola;
+        private System.Windows.Forms.CheckBox chkCatupiry;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label cmbValorOpcionais;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbTamanhoPizza;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox cmbPesquisar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnSalvar2;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }
 
